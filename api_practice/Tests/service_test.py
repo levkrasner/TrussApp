@@ -12,8 +12,11 @@ class MyTestCase(unittest.TestCase):
         response = self.get_Response('/')
         assert 'Hello' == response
 
+    def get_Response(self,symbol):
+        return self.app.get(symbol).data
+
     def test_something(self):
         assert 1==1
-
+                       
 if __name__ == '__main__':
     unittest.main()
