@@ -1,4 +1,4 @@
-import  random
+import random
 import sys
 from flask import Flask
 app = Flask(__name__)
@@ -15,7 +15,7 @@ def test():
 
 @app.route('/test2')
 def my_name():
-    return 'Lev'
+    return 'Lev2'
 
 @app.route('/random')
 def get_random():

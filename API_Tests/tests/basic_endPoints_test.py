@@ -1,6 +1,6 @@
 
-import nose
-from Test2 import app
+
+from Basic_endPoints import app
 
 import unittest
 class FlaskrTestCase(unittest.TestCase):
@@ -18,7 +18,7 @@ class FlaskrTestCase(unittest.TestCase):
 
     def get_my_name_test(self):
         response = self.get_Response('/test2')
-        assert response == 'Lev'
+        assert response == 'Lev2'
 
 
 
