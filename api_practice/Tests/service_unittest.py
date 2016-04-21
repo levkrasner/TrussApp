@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
 
     def test2(self):
         response = self.get_Response('/')
-        assert 'Hello' == response
+        assert 'Hello!' == response
 
     def get_Response(self,symbol):
         return self.app.get(symbol).data
